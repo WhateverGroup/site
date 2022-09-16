@@ -7,7 +7,6 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
-  TwitterIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
@@ -251,11 +250,6 @@ export default function Home() {
             We're building next-generation online learning experiences that go beyond the classroom and rewrite everything you know about L&D.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com/whatevergroup"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
             <SocialLink
               href="https://github.com/whatevergroup"
               aria-label="Follow on GitHub"
