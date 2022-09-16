@@ -3,48 +3,32 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoGraph from '@/images/logos/graph-logo.png'
+import logoFreeway from '@/images/logos/freeway-logo.png'
+import logoTechmap from '@/images/logos/techmap-logo.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Techmap',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'The go-to course for non-technical people to learn about tech.',
+    link: { href: 'https://techmap.app', label: 'techmap.app' },
+    logo: logoTechmap,
   },
   {
-    name: 'Animaginary',
+    name: 'Graph',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'The Learning Experience Management (LXS) system for building and running courses that work.',
+    link: { href: 'https://graph.techmap.app', label: 'graph.techmap.app' },
+    logo: logoGraph,
   },
   {
-    name: 'HelioStream',
+    name: 'Freeway',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+      'Learn data engineering skills by working as a data engineer.',
+    link: { href: '#', label: 'Not public' },
+    logo: logoFreeway,
+  }
 ]
 
 function LinkIcon(props) {
@@ -62,15 +46,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects – Whatever</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="What we're making right now."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="What we're making right now."
+        intro="Here are some of our current public projects."
       >
         <ul
           role="list"
